@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 body{
     background-image: url('b.svg'); 
     background-size: cover;
@@ -9,18 +10,16 @@ body{
     height: 100vh;
 }
 .main p{
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 14px;
     margin-top: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
 }
 .fold {
     margin-top: 7px;
     cursor: pointer;
     margin-left: 7px;
-}
-.fold:hover {
-    transition: 0.3s;
 }
 .taskbar{
     background-color: #292929;
@@ -58,18 +57,6 @@ body{
     margin-left: 500px;
     margin-right: auto;
 }
-.termi{
-    position: absolute; 
-    text-align: center;
-    margin-left: 550px;
-    margin-bottom: 100px;
-}
-
-.termi img{
-    cursor: pointer;
-    border-radius: 12px;
-}
-
 .right{
     justify-self: flex-end;
     position: absolute;
@@ -83,11 +70,9 @@ body{
 img {
     cursor: pointer;
 }
-.trash {
-    cursor: pointer;
-}
 .trash p{
     margin: 6px;
+    font-size: 15px;
     margin-top: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
