@@ -1,20 +1,29 @@
-document.getElementById("we1").onclick = function ()
-{
-    window.location.href="pages/counter.html"
-};
-document.getElementById("we2").onclick = function ()
-{
-    window.location.href="pages/time.html"
-};
-document.getElementById("we3").onclick = function ()
-{
-    window.location.href="pages/minecraft.html"
-};
-document.getElementById("error").onclick = function ()
-{
-    window.location.href="pages/404.html"
-};
-document.getElementById("we4").onclick = function ()
-{
-    window.location.href="OS/desire.html"
-};
+let taskbar = document.getElementsByClassName("mtask")[0]
+let startmenu = document.getElementsByClassName("startmenu")[0]
+let fold = document.getElementsByClassName("fold")[0]
+let xp = document.getElementsByClassName("xp")[0]
+
+taskbar.addEventListener("click", ()=>{
+    if(startmenu.style.bottom == "31px"){
+        startmenu.style.bottom = "-655px"
+    }
+    else{
+        startmenu.style.bottom = "31px"
+    }
+});
+fold.addEventListener("click", ()=>{
+    if(xp.style.bottom == "70px"){
+        xp.style.bottom = "-655px"
+    }
+    else{
+        xp.style.bottom = "70px"
+    }
+});
+xp.addEventListener("click", ()=>{
+    if(xp.style.bottom == "70px"){
+        xp.style.bottom = "-655px"
+    }
+    else{
+        xp.style.bottom = "70px"
+    }
+});

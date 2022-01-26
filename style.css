@@ -1,335 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-* {
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+body{
+    background-image: url('b.svg'); 
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+.main p{
+    color: rgb(0, 0, 0);
+    margin: 14px;
     margin-top: 0;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
 }
-body {
-    font-family: 'Balsamiq Sans', cursive;
-    background-image: none;
+.fold {
+    margin-top: 7px;
+    cursor: pointer;
+    margin-left: 7px;
 }
-.loader_bg{
-    position: fixed;
-    z-index: 999999;
-    background: #fff;
+.taskbar{
+    background-color: #292929;
     width: 100%;
-    height: 100%;
-}
-.loader{
-    border: 0 soild transparent;
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
-}
-.loader:before, .loader:after{
-    content: '';
-    border: 1em solid #0ed8f3;
-    border-radius: 8px;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-    top: 0;
-    left: 0;
-    animation: loader 2s linear infinite;
-    opacity: 0;
-}
-.loader:before{
-    animation-delay: .1s;
-}
-@keyframes loader{
-    0%{
-        transform: scale(0);
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        transform: scale(0.7);
-        opacity: 0;
-    }
+    gap: 13px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: left;
 }
 
-.main {
-    font-size: 35px;
-    text-align: center;
+.startmenu{
+    position: absolute; 
+    bottom: -655px;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-out; 
 }
-.row {
-    display: flex;
-    flex-direction: flex;
-    margin-bottom: 20px;
+
+.startmenu img{
+    border-radius: 12px;
 }
-.main h3 {
-    font-size: 18px;
+
+.xp{
+    position: absolute; 
+    bottom: -655px;
+    cursor: pointer;
+    text-align: left;
 }
-input[type=text] {
-    width: 72%;
-    padding: 10px 20px;
-    margin: 1%px 0;
-    display: inline-block;
-    text-decoration: inherit;
-    font-size: 15px;
-    border: 1px solid #555;
-    border-radius: 4px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-color: black;
-    border-radius: 4px;
-    box-direction: left;
-}
-.we1 {
-    display: table-column;
-    margin: auto;
-    width: 13%;
-    text-align: center;
-    margin-left: 10%;
+
+.xp img{
+    border-radius: 12px;
+    display: block;
+    margin-left: 500px;
     margin-right: auto;
-    border: 3px solid rgb(201, 212, 201);
-    padding: 10px;
 }
-#we1 {
-    border-radius: 12px;
-    padding: 10px;
-    border: none;
-    font-size: 18px;
-    color: azure;
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}  
+.icons{
+    color: white;
+}
+img {
     cursor: pointer;
-    font-family: 'Neucha', cursive;
-    width: 100px;
-    background-color: rgb(107, 107, 126);
 }
-#we1:hover {
-    transition: 0.90s;
-    background-color: rgb(83, 83, 94);
-}
-#we2 {
-    border-radius: 12px;
-    padding: 10px;
-    border: none;
-    font-size: 18px;
-    color: azure;
-    cursor: pointer;
-    font-family: 'Neucha', cursive;
-    width: 100px;
-    background-color: rgb(107, 107, 126);
-}
-#we2:hover {
-    transition: 0.90s;
-    background-color: rgb(83, 83, 94);
-}
-#we3 {
-    border-radius: 12px;
-    padding: 10px;
-    border: none;
-    font-size: 18px;
-    color: azure;
-    cursor: pointer;
-    font-family: 'Neucha', cursive;
-    width: 100px;
-    background-color: rgb(107, 107, 126);
-}
-#we3:hover {
-    transition: 0.90s;
-    background-color: rgb(83, 83, 94);
-}
-#we4 {
-    border-radius: 12px;
-    padding: 10px;
-    border: none;
-    font-size: 18px;
-    color: azure;
-    cursor: pointer;
-    font-family: 'Neucha', cursive;
-    width: 100px;
-    background-color: rgb(107, 107, 126);
-}
-#we4:hover {
-    transition: 0.90s;
-    background-color: rgb(83, 83, 94);
-}
-#error {
-    border-radius: 12px;
-    padding: 10px;
-    border: none;
-    font-size: 18px;
-    color: azure;
-    cursor: pointer;
-    font-family: 'Neucha', cursive;
-    width: 100px;
-    background-color: rgb(107, 107, 126);
-}
-#error:hover {
-    transition: 0.90s;
-    background-color: rgb(83, 83, 94);
-}
-.footer {
-    text-align: center;
-}
-@media all and (max-width: 800px) {
-    @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-    body {
-        font-family: 'Balsamiq Sans', cursive;
-        background-color: aliceblue;
-        background-image: none;
-    }
-    .main {
-        font-size: 35px;
-        text-align: center;
-    }
-    .main h3 {
-        font-size: 18px;
-    }
-    .row {
-        display: grid;
-        row-gap: 25px;
-    }
-    .we1 {
-        margin: auto;
-        width: 70%;
-        margin-left: 10%;
-        margin-right: auto;
-        border: 3px solid rgb(201, 212, 201);
-        padding: 10px;
-    }
-    #we1 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we1:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    #we2 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we2:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    #we3 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we3:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    footer {
-        text-align: center;
-        padding: 3px;
-        background-color: transparent;
-        color: white;
-    }
-    a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-    }
-}
-@media all and (min-width: 1080px) {
-    @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
-    body {
-        font-family: 'Balsamiq Sans', cursive;
-        background-color: rgb(255, 252, 223);
-        background-image: none;
-    }
-    .main {
-        font-size: 30px;
-        text-align: center;
-    }
-    .main h3 {
-        font-size: 20px;
-    }
-    .we1 {
-        margin: auto;
-        width: 15%;
-        margin-left: 8%;
-        margin-right: auto;
-        border: 3px solid rgb(201, 212, 201);
-        padding: 10px;
-    }
-    #we1 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we1:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    #we2 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we2:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    #we3 {
-        border-radius: 12px;
-        padding: 10px;
-        border: none;
-        font-size: 18px;
-        color: azure;
-        cursor: pointer;
-        font-family: 'Neucha', cursive;
-        width: 100px;
-        background-color: rgb(107, 107, 126);
-    }
-    #we3:hover {
-        transition: 0.90s;
-        background-color: rgb(83, 83, 94);
-    }
-    .footer {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        font-size: 28px;
-        width: 100%;
-        background-color: transparent;
-        color: rgb(0, 0, 0);
-        font-family: 'Neucha', cursive;
-        text-align: center;
-    }
-    a {
-        color: rgb(0, 0, 0);
-        text-decoration: none;
-        font-size: 23px;
-    }
+.trash p{
+    margin: 6px;
+    font-size: 15px;
+    margin-top: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
