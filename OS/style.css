@@ -16,6 +16,7 @@ body{
 }
 .fold {
     margin-top: 7px;
+    cursor: pointer;
     margin-left: 7px;
 }
 .fold:hover {
@@ -47,6 +48,7 @@ body{
 .xp{
     position: absolute; 
     bottom: -655px;
+    cursor: pointer;
     text-align: left;
 }
 
@@ -64,6 +66,7 @@ body{
 }
 
 .termi img{
+    cursor: pointer;
     border-radius: 12px;
 }
 
@@ -76,6 +79,12 @@ body{
 }  
 .icons{
     color: white;
+}
+img {
+    cursor: pointer;
+}
+.trash {
+    cursor: pointer;
 }
 .trash p{
     margin: 6px;
