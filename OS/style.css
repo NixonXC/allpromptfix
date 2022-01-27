@@ -34,7 +34,25 @@ body{
     z-index: 110;
     justify-content: left;
 }
-
+.taskbar img {
+    cursor: pointer;
+}
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+}
+.trash {
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    bottom: 28px;
+}
+.trash img {
+    cursor: pointer;
+}
 .startmenu{
     position: absolute; 
     bottom: -655px;
@@ -50,7 +68,6 @@ body{
 .xp{
     position: absolute; 
     bottom: -655px;
-    cursor: pointer;
     transition: all 0.4s ease-out; 
     text-align: left;
 }
@@ -59,29 +76,17 @@ body{
     border-radius: 12px;
     display: block;
     margin-left: 500px;
+    cursor: pointer;
     margin-right: auto;
 }
-.right{
-    justify-self: flex-end;
-    position: absolute;
-    right: 0;
-    margin: 6px 0;
-    height: 85%;
-}  
 .icons{
     color: white;
-}
-img {
-    cursor: pointer;
 }
 .trash p{
     margin: 6px;
     font-size: 15px;
     margin-top: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.trash {
-    width: 20px;
 }
 .trashfold{
     position: absolute; 
